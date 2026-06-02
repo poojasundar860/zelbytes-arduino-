@@ -6,7 +6,7 @@ Verify Arduino IDE installation and board communication.
 
  Hardware
 
-* Arduino Uno/Nano
+* Arduino Uno
 * USB Cable
 
  Result
