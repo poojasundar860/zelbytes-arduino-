@@ -214,7 +214,3 @@ Upload telemetry data from the bench to the Zelbytes IoT Learning Lab cloud.
 * Device ID used
 * Dashboard screenshot with 10+ samples
 
-Task 9: Automated Grow-Bench Prototype
-Max Points
-100
-## Objective Deliver firmware v1.0: auto-irrigation from soil threshold with manual override. ## Requirements 1. Auto mode + manual override button. 2. Serial commands: `STATUS`, `FORCE_ON`, `FORCE_OFF`. 3. Tag `v1.0-capstone` in Git. ## Submit - Demo video (2–3 min) or mentor-signed checklist - Git tag link **Tutorial reference:** Days 3–4 · Task 2
