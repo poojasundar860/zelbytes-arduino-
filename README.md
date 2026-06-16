@@ -197,7 +197,6 @@ Upload telemetry data from the bench to the Zelbytes IoT Learning Lab cloud.
 ## Components
 
 * Arduino Uno
-* DHT22 Sensor
 * USB Connection
 * Python Host Script
 
@@ -214,3 +213,32 @@ Upload telemetry data from the bench to the Zelbytes IoT Learning Lab cloud.
 * Device ID used
 * Dashboard screenshot with 10+ samples
 
+# Task 9: Automated Grow-Bench Prototype
+
+## Objective
+
+Develop an automated irrigation system with soil-based control and manual override.
+
+## Components
+
+* Arduino Uno
+* Soil Moisture Sensor
+* Relay Module
+* Solenoid Valve
+* Push Button
+* LED
+
+## Features
+
+* Automatic irrigation using soil moisture threshold.
+* Manual override button.
+* Serial commands:
+
+  * STATUS
+  * FORCE_ON
+  * FORCE_OFF
+* Relay-controlled valve operation.
+
+## Conclusion
+
+The automated grow-bench prototype successfully combined sensing, control, and manual override features into a single irrigation system.
