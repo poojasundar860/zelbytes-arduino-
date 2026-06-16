@@ -1,13 +1,7 @@
-Board: Arduino Uno
+void setup() {
+  Serial.begin(9600);
+  Serial.println("Hello");
+}
 
-COM Port: ______COM4____
-
-Arduino IDE Version: 2.3.6
-
-Components:
-
-Arduino Board
-Breadboard
-LEDs
-Push Buttons
-Jumper Wires
+void loop() {
+}
