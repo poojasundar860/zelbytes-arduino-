@@ -156,3 +156,65 @@ To control a DC motor using PWM and implement an interrupt-based emergency stop 
 ## Conclusion
 
 The DC motor speed was successfully controlled using PWM. The E-Stop button immediately stopped the motor and closed the valve through an interrupt, ensuring safe operation of the irrigation system.
+
+# Task 7: Interrupts & Data Logging
+
+## Objective
+
+To implement interrupt-based button handling and log sensor data in CSV format for monitoring and analysis.
+
+## Components
+
+* Arduino Uno
+* Push Button
+* LED
+* DHT22 Sensor
+* Soil Moisture Sensor
+* LDR
+
+## Features
+
+* External interrupt using `attachInterrupt()`.
+* ISR sets a volatile event flag.
+* Debouncing handled in `loop()`.
+* CSV data logging through Serial Monitor.
+* Timestamped sensor records using `millis()`.
+
+## CSV Format
+
+timestamp,temp,humidity,soil,light
+
+## Conclusion
+
+Interrupt-driven event handling and CSV data logging were successfully implemented. The system responded quickly to button events while continuously recording sensor data for analysis.
+
+# Task 8: Zelbytes IoT Lab
+
+## Objective
+
+Upload telemetry data from the bench to the Zelbytes IoT Learning Lab cloud.
+
+## Components
+
+* Arduino Uno
+* DHT22 Sensor
+* USB Connection
+* Python Host Script
+
+## Features
+
+* Reads sensor values from Serial.
+* Uploads telemetry to IoT Lab API.
+* Uses API key stored in `secrets.h`.
+* Dashboard displays uploaded samples.
+
+## Submission
+
+* secrets.h.example
+* Device ID used
+* Dashboard screenshot with 10+ samples
+
+Task 9: Automated Grow-Bench Prototype
+Max Points
+100
+## Objective Deliver firmware v1.0: auto-irrigation from soil threshold with manual override. ## Requirements 1. Auto mode + manual override button. 2. Serial commands: `STATUS`, `FORCE_ON`, `FORCE_OFF`. 3. Tag `v1.0-capstone` in Git. ## Submit - Demo video (2–3 min) or mentor-signed checklist - Git tag link **Tutorial reference:** Days 3–4 · Task 2
