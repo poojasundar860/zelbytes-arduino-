@@ -6,7 +6,7 @@ Arduino Uno to the Zelbytes IoT Learning Lab dashboard using a host Python
 script, since the Uno has no native WiFi capability.
 
 ## Device Information
-- **Device ID:** samvritha_01
+- **Device ID:** pooja_01
 - **Endpoint:** https://careers.zelbytes.com/api/iot-lab/v1/telemetry
 - **Telemetry Topic:** zelbytes/lab/65/telemetry
 
@@ -28,7 +28,7 @@ using the API key stored in `secrets.h` (gitignored, never committed).
 ## Sample JSON Payload
 ```json
 {
-  "device_id": "krishnaas_bench01",
+  "device_id": "pooja_bench01",
   "temperature_c": 29.7,
   "humidity_pct": 87,
   "soil_moisture_pct": 32,
