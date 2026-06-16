@@ -1,6 +1,6 @@
- TASK 1- Blink
+ # TASK 1- Blink
 
- Objective
+## Objective
 
 Verify Arduino IDE installation and board communication.
 
@@ -64,3 +64,95 @@ To manually control a solenoid valve using a relay module, push button, and seri
 
 The relay-controlled irrigation system was successfully implemented. The valve operated safely through manual button control and serial monitoring, following recommended safety practices.
 
+# Task 4: Multi-Sensor Logging
+
+## Objective
+
+To integrate multiple sensors and log environmental data in CSV format using Arduino.
+
+## Components
+
+* Arduino Uno
+* DHT22 Sensor
+* Soil Moisture Sensor
+* LDR
+* HC-SR04 Ultrasonic Sensor
+
+## Features
+
+* Temperature and humidity monitoring.
+* Soil moisture measurement.
+* Light intensity measurement.
+* Distance measurement using ultrasonic sensor.
+* CSV data logging through Serial Monitor.
+
+## CSV Format
+
+timestamp, ldr, temp, humidity, distance, soil
+
+## Conclusion
+
+All sensors were successfully integrated into a single system. Sensor data was collected and logged in CSV format for monitoring and analysis.
+
+
+# Task 5: Threshold Logic & State Machine
+
+## Objective
+
+To automate irrigation using soil moisture thresholds and a state machine.
+
+## Components
+
+* Arduino Uno
+* Soil Moisture Sensor
+* DHT22 Sensor
+* Relay Module
+* Solenoid Valve
+* LED
+
+## States
+
+* IDLE
+* IRRIGATING
+* COOLDOWN
+* FAULT
+
+## Features
+
+* Automatic irrigation based on soil moisture.
+* Cooldown period after irrigation.
+* DHT22 fault detection.
+* Relay-controlled valve operation.
+* Serial monitoring of state transitions.
+
+## Conclusion
+
+A state-machine-based irrigation controller was implemented successfully. The system automatically irrigates when soil moisture is low and safely enters FAULT mode if sensor errors occur.
+
+# Task 6: PWM Motor & Interrupt E-Stop
+
+## Objective
+
+To control a DC motor using PWM and implement an interrupt-based emergency stop system.
+
+## Components
+
+* Arduino Uno
+* DC Motor
+* Motor Driver Module
+* Relay Module
+* Solenoid Valve
+* Push Button (E-Stop)
+* LED
+
+## Features
+
+* PWM motor speed control (0–255).
+* Speed control through Serial Monitor.
+* Interrupt-driven Emergency Stop.
+* Relay-controlled valve shutdown.
+* Safe motor and valve operation.
+
+## Conclusion
+
+The DC motor speed was successfully controlled using PWM. The E-Stop button immediately stopped the motor and closed the valve through an interrupt, ensuring safe operation of the irrigation system.
